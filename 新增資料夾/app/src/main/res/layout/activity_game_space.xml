@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameSpace"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/pica_left"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintVertical_bias="0.75"
+        android:src="@drawable/pica"/>
+
+    <ImageView
+        android:id="@+id/pica_right"
+        android:layout_width="85dp"
+        android:layout_height="110dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintVertical_bias="0.75"
+        android:src="@drawable/pica"/>
+
+    <ImageView
+        android:id="@+id/volly_ball"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintVertical_bias="0.1"
+        android:src="@drawable/ball"/>
+
+    <TextView
+        android:id="@+id/score_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0.05"
+        android:text="0"
+        android:textSize="40sp"
+        android:textColor="#ff0000"/>
+
+    <TextView
+        android:id="@+id/score_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintHorizontal_bias="0.95"
+        android:text="0"
+        android:textSize="40sp"
+        android:textColor="#ff0000"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        app:layout_constraintHorizontal_bias="0.955"
+        android:background="@drawable/circle_direction">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/bt_top"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.8"
+        android:src="@drawable/top"
+        android:background="#00000000"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/bt_bottom"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/bt_top"
+        app:layout_constraintLeft_toLeftOf="@+id/bt_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        android:src="@drawable/bottom"
+        android:background="#00000000"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/bt_left"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/bt_top"
+        app:layout_constraintBottom_toTopOf="@+id/bt_bottom"
+        app:layout_constraintRight_toLeftOf="@+id/bt_top"
+        android:layout_marginRight="15dp"
+        app:layout_constraintVertical_bias="0.65"
+        android:src="@drawable/left"
+        android:background="#00000000"
+        android:scaleType="fitXY"/>
+
+    <ImageButton
+        android:id="@+id/bt_right"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintTop_toBottomOf="@+id/bt_top"
+        app:layout_constraintBottom_toTopOf="@+id/bt_bottom"
+        app:layout_constraintLeft_toRightOf="@+id/bt_top"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintVertical_bias="0.65"
+        android:src="@drawable/right"
+        android:background="#00000000"
+        android:scaleType="fitXY"/>
+
+
+</android.support.constraint.ConstraintLayout>
