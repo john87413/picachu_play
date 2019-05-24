@@ -95,7 +95,7 @@
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintVertical_bias="0.8"
         android:src="@drawable/top"
-        android:background="#00000000"
+        android:background="@drawable/direction_circle"
         android:scaleType="fitXY"/>
 
     <ImageButton
@@ -107,7 +107,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.7"
         android:src="@drawable/bottom"
-        android:background="#00000000"
+        android:background="@drawable/direction_circle"
         android:scaleType="fitXY"/>
 
     <ImageButton
@@ -117,10 +117,10 @@
         app:layout_constraintTop_toBottomOf="@+id/bt_top"
         app:layout_constraintBottom_toTopOf="@+id/bt_bottom"
         app:layout_constraintRight_toLeftOf="@+id/bt_top"
-        android:layout_marginRight="15dp"
-        app:layout_constraintVertical_bias="0.65"
+        android:layout_marginRight="10dp"
+        app:layout_constraintVertical_bias="0.6"
         android:src="@drawable/left"
-        android:background="#00000000"
+        android:background="@drawable/direction_circle"
         android:scaleType="fitXY"/>
 
     <ImageButton
@@ -131,9 +131,9 @@
         app:layout_constraintBottom_toTopOf="@+id/bt_bottom"
         app:layout_constraintLeft_toRightOf="@+id/bt_top"
         android:layout_marginLeft="15dp"
-        app:layout_constraintVertical_bias="0.65"
+        app:layout_constraintVertical_bias="0.6"
         android:src="@drawable/right"
-        android:background="#00000000"
+        android:background="@drawable/direction_circle"
         android:scaleType="fitXY"/>
 
 
